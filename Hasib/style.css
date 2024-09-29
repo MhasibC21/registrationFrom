@@ -4,7 +4,7 @@
 #regForm{
     display: flex;
     width: 25%;
-    height:100%;
+    height:auto;
     border: 1px solid rgb(233, 142, 6);
     padding: 12px;
     margin-top: 8px;
