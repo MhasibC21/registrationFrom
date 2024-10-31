@@ -5,36 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hasib</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <div id="regForm">
         <form action="">
-            <h1 style="color:rgb(255, 255, 255);margin-bottom: 5px;">Registration Form</h1>
-            <label for="">First Name: </label> <br><!--firstName-->
-            <input type="text" name="firstName" id="" placeholder="Enter Your First Name" class="input"><br>
-            <label for="">Last Name: </label><br>  <!--lastName-->
-            <input type="text" name="lasttName" id="" placeholder="Enter Your Last Name" class="input"><br>
-            <label for="">Email: </label><br> <!--Email-->
-            <input type="email" name="" id="" placeholder="Email" class="input"><br>
-            <label for="">Phone: </label><br> <!--Phone-->
-            <input type="number" name="" id="" placeholder="Enter Your valid Number" class="input"><br>
-            <label for="">Password: </label><br> <!--Password-->
-            <input type="password" name="" id="" class="input"><br>
-            <label for=""> Date of Birth</label><br> <!--dateOfBirth-->
-            <input type="date" name="" id="" class="input"><br>
-            Gender <br><input type="radio" name="fav_language" id="">  <!--genderOption-->
-            <label for=""> Male</label>
-            <input type="radio" name="fav_language" id="">
-            <label for="" > Female</label><br>
-            <label for="" >City Name</label>
-                <select name="" id="" class="dropDown" >  <!--dropDown--> 
-                        <option value="" > Dhaka</option>
-                        <option value=""> Cumilla</option>
-                        <option value=""> Chittagong</option>
-                </select>
-             <input type="checkbox" name="" id=""> I agree to the Terms and Conditions <br> 
-            <button type="submit"  class= "btn">Sign Up</button>
+            <h1>Registration Form</h1>
+            <div class="input-group">
+                <i class="fa fa-user"></i>
+                <input type="text" name="firstName" placeholder="Enter Your First Name"  required>
+            </div>
+            <div class="input-group">
+                <i class="fa fa-user"></i>
+                <input type="text" name="lastName" placeholder="Enter Your Last Name"  required>
+            </div>
+            <div class="input-group">
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <i class="fa fa-phone"></i>
+                <input type="number" name="phone" placeholder="Enter Your Valid Number"  required>
+            </div>
+            <div class="input-group">
+                <i class="fa fa-lock"></i>
+                <input type="password" name="password" placeholder="Password"  required>
+            </div>
+         
+            <div class="input-group">
+                <i class="fa fa-calendar"></i>
+                <input type="date"  class="input" placeholder="Date of Birth" required>
+            </div>
             
+            <div>
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male" required> Male
+                <input type="radio" name="gender" value="female" required> Female
+            </div>
+            <label for="city">City Name:</label>
+            <div class="input-group">
+                <i class="fa fa-city"></i>
+                <select name="city" class="dropDown" required>
+                    <option value="" disabled selected>Select City</option>
+                    <option value="Dhaka">Dhaka</option>
+                    <option value="Cumilla">Cumilla</option>
+                    <option value="Chittagong">Chittagong</option>
+                </select>
+            </div>
+            <div class="terms">
+                <input type="checkbox" name="terms" required> I agree to the Terms and Conditions
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
         </form>
     </div>
 </body>
